@@ -17,10 +17,10 @@ const About = () => {
               <p>Hi. I'm Daniel, thanks for coming. Please take a look around!</p>
             </div>
             <div>
-              <p>I have a huge passion for technology and business, which led me to undertake my degree in computer science and business
+              <p>I am a self driven third level student, with an underlying curiosity to constantly improve and learn. My main passion lies in technology and business, which led me to undertake my degree in computer science and business
                 in Trinity College Dublin. I have a strong foundation in many programming languages. Through college I learned Java, C# and C. In addition, through 
-                the startup I have been involved in in the last year 'YourTutor', I have adapted to other languages such as Vue, HTML and CSS. 
-                By working with YourTutor it also built my knowledge of business.</p>  
+                the startup I have been involved in in the last year 'YourTutor', I have adapted to other languages such as React, HTML and CSS. 
+                By working with YourTutor it also built my knowledge of business. Apart from my field of work, I am said to be a strong team player, as well as having leadership and problem solving skills.  </p>  
             </div>
           </div>
       </div>
