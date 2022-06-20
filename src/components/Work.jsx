@@ -3,6 +3,7 @@ import WorkImg from '../assets/workImg.jpeg';
 import realEstate from '../assets/realestate.jpg';
 import Popup from './Popup';
 import CovidAppImg from '../assets/CovidApp.png';
+import Diagram from '../assets/diagram.jpg';
 
 const Work = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +30,8 @@ const Work = () => {
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
+            <div className='opacity-0 group-hover:opacity-100 text-center'>
+              <span className='text-2xl font-bold text-white tracking-wider '>
                 Covid-19 App
               </span>
               <div className='pt-8 text-center'>
@@ -67,21 +68,30 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${realEstate})` }}
+            style={{ backgroundImage: `url(${Diagram})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
+            <div className='opacity-0 group-hover:opacity-100 text-center'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                Postgres Monitor
               </span>
               <div className='pt-8 text-center'>
-                <a href='https://photos.app.goo.gl/3dhXv4qWVkswdec86'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
+              <button onClick={togglePopup} className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Description
                   </button>
-                </a>
-                <a href='https://github.com/DanielMadaghjian/Covid-19-App'>
+                  {isOpen && <Popup
+                         content={<>
+                         <div className='font-bold'>
+                            <p className='text-2xl text-orange-300 '>Postgres Monitor</p>
+                            <p className='text-gray-700'>I worked on a software engineering project during second year in college. As a group we worked alongside Finbourne Technology who are a well established firm that provides infrastructures for financial and investment firms to control their data. 
+In this project we were challenged to create a monitoring system which allows Finbourne to investigate and carry out actions on the databases of financial institutions in the absence of "break glass". I contributed to the building of a program which polled and retrieved relevant statistics, whilst simultaneously carrying out documentation that was to be presented to our client. </p>
+                        </div>
+                    </>}
+                    handleClose={togglePopup}
+                 />}
+                
+                <a href='https://github.com/dan-whelan/FourthWall'>
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>

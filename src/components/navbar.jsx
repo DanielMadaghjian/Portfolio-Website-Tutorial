@@ -3,6 +3,7 @@ import Logo from '../assets/logo.jpg';
 import {FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import DM from '../assets/DM.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         <div>
-            <img src={Logo} alt ="Logo" style={{width: '100px'}}></img>
+            <img src={DM} alt ="Logo" style={{width: '100px'}}></img>
         </div>
         
             <ul className='hidden md:flex '>
