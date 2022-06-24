@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <Home></Home>
       <About></About>
+      <Experience></Experience>
       <Skills></Skills>
       <Work></Work>
       <Contact></Contact>
